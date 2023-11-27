@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+}
+
+header {
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  width: 100%;
+  height: 56px;
+}
+
+.mobileLogo {
+  display: block;
+  height: 30px;
+}
+
+.desktopLogo {
+  display: none;
+  height: 30px;
+}
+
+.searchDiv {
+  border: 1px solid #777;
+  background-color: rgb(48, 48, 48);
+  border-radius: 5px;
+  height: 32px;
+  flex-basis: 480px;
+  color: #fff;
+  padding: 0.3em;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0.3em;
+  margin-left: 10px;
+}
+
+.searchInput::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.2px;
+}
+
+.searchDiv:hover {
+  border: 1px solid #fff;
+}
+
+.searchDiv.focus {
+  border: 2px solid #fff;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.notification {
+  background-color: rgb(48, 48, 48);
+  border-radius: 6px;
+  height: 32px;
+  width: 32px;
+  transition: all 0.3s ease;
+}
+
+.notification:hover,
+.nameDiv:hover {
+  background-color: rgb(84, 84, 84);
+}
+
+#notificationContent {
+  width: 351px;
+  height: 50px;
+  padding: 16px;
+}
+
+#notificationContent:hover {
+  background: rgba(241, 241, 241, 1);
+}
+
+.nameDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 500;
+  line-height: 15.6px;
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.nameDiv > span:nth-of-type(1) {
+  display: none;
+}
+
+.notification:focus,
+.nameDiv:focus {
+  border: 2px solid rgba(0, 91, 211, 1);
+  border-radius: 8px;
+  outline: none;
+}
+
+.shopName {
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  width: 142px;
+  height: 32px;
+  transition: all 0.3s ease;
+  padding: 7px 3px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.shopAbbr {
+  background-color: #36fba1;
+  color: #209761;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1em auto 0 auto;
+  gap: 0.8em;
+}
+
+.section1 {
+  background-color: rgba(26, 26, 26, 1);
+  width: 100%;
+  padding: 0.7em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.section1 > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: #fff;
+  gap: 1em;
+}
+
+.section1 > div:nth-of-type(1) > p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.2px;
+}
+
+.btnLink {
+  background-color: #fff;
+  color: rgba(50, 50, 50, 1);
+  padding: 0.3em;
+  border-radius: 6px;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+}
+
+.closeDiv {
+  margin: 0 0 0 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.closeDiv:hover {
+  background-color: #777;
+}
+
+.lowerSection {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #dadadb;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.section2 {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.section2 > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.section2 > div:nth-of-type(1) > p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.arrow > img {
+  width: 17px;
+  height: 17px;
+}
+
+.arrow:focus,
+.arrow:focus {
+  border: 2px solid rgba(0, 91, 211, 1);
+}
+
+.arrow:hover {
+  background-color: #ccc;
+}
+
+.section2 > div:nth-of-type(2) {
+  font-size: 13px;
+  line-height: 18.2px;
+}
+
+.meterClass {
+  line-height: 15.6px;
+}
+
+.stepWrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+.stepNumber {
+  margin-top: 3px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.spinnerDiv > svg {
+  animation: spin 1s linear infinite;
+}
+
+.checkmarkDiv > svg {
+  animation: zoom 0.5s ease-in-out;
+}
+
+.fullCircleDiv,
+.fullCircleFilledDiv,
+.spinnerDiv,
+.checkmarkDiv,
+.timeSlotDiv {
+  display: none;
+}
+
+.stepNumberImage:hover .fullCircleDiv {
+  display: block;
+}
+
+.stepNumberImage:hover .spinnerDiv,
+.stepNumberImage:hover .checkmarkDiv,
+.stepNumberImage:hover .fullCircleFilledDiv,
+.stepNumberImage:hover .timeSlotDiv {
+  display: none;
+}
+
+.dashedcirclesvg:hover circle {
+  stroke-dasharray: 0 0;
+}
+
+.stepNumberImage:active .fullCircleDiv,
+.stepNumberImage:active .dashedCircleDiv,
+.stepNumberImage:active .spinnerDiv,
+.stepNumberImage:active .checkmarkDiv,
+.stepNumberImage:active .timeSlotDiv {
+  display: none;
+}
+
+.stepNumberImage:active .fullCircleFilledDiv {
+  display: block;
+}
+
+.timeslot-svg {
+  background-color: #777;
+  border-radius: 50%;
+}
+
+.timeslot-svg > path:first-child {
+  fill: #fff;
+}
+
+.stepDetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+  padding-top: 0.2em;
+  font-size: 13px;
+  line-height: 18.2px;
+  font-weight: 500;
+}
+
+.javButton {
+  color: rgba(246, 243, 246, 1);
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+  box-shadow: 0 1px 0 1.5px rgba(51, 51, 51, 1);
+}
+
+.javButton:hover {
+  box-shadow: 0 0 0 1.5px rgba(51, 51, 51, 1);
+  background-color: rgba(42, 42, 42, 1);
+}
+
+.javButton:focus {
+  background-color: rgba(64, 64, 64, 1);
+  box-shadow: 0 0 0 5px rgba(0, 91, 211, 1);
+  border-width: 1.5px, 1.5px, 0px, 1.5px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.javbutton:active {
+  background-color: rgba(43, 43, 43, 1);
+}
+
+.javLink {
+  color: rgba(0, 91, 211, 1);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.javLeft > div {
+  margin-bottom: 10px;
+  padding-top: 0.2em;
+}
+
+.javLeft > div:nth-of-type(1) {
+  font-size: 13px;
+  line-height: 18.2px;
+  font-weight: 500;
+}
+
+.javLeft > div:nth-of-type(2) > p {
+  font-size: 13px;
+  line-height: 18.2px;
+  font-weight: 500;
+}
+
+.javLeftImage {
+  display: none;
+}
+
+.javButtonOther {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.javButtonOther > div {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+}
+
+.profilePop {
+  width: 320px;
+  height: 384px;
+  background-color: #fff;
+  border-radius: 14px;
+  border: 2px solid #eee;
+  position: absolute;
+  right: 0.9em;
+  top: 4em;
+  padding: 6px 0;
+  display: none;
+  z-index: 100;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.profilePop > a {
+  width: 97%;
+  margin: 3px auto;
+  padding: 6px 5px;
+}
+
+.profilePop > hr {
+  border: 1px solid #ccc;
+}
+
+.menu-first,
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.2px;
+}
+
+.col {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.david {
+  font-weight: 500;
+}
+
+.davidMail {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
+.menu-item:hover,
+.menu-first:hover {
+  border-radius: 10px;
+  background-color: rgba(241, 241, 241, 1);
+}
+
+.menu-item:focus,
+.menu-first:focus,
+.notification:focus,
+.nameDiv:focus {
+  border: 2px solid rgba(0, 91, 211, 1);
+  border-radius: 10px;
+  outline: none;
+}
+
+.allStores {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.notifyBox {
+  width: 358px;
+  height: 118px;
+  border: 1px solid #dadadb;
+  border-radius: 10px;
+  position: absolute;
+  right: 0.9em;
+  top: 4em;
+  background-color: #fff;
+  z-index: 100;
+  padding: 16px;
+  display: none;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+.alert > p {
+  flex: 1;
+}
+
+.alert > div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.alert > div > svg:focus {
+  border: 2px solid rgba(0, 91, 211, 1);
+  border-radius: 4px;
+  outline: none;
+}
+
+.notifyBox > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 800px) {
+  .notifyBox {
+    width: 383px;
+  }
+
+  .profilePop {
+    width: 22.22%;
+    left: 76.67%;
+  }
+
+  .javLeftImage {
+    display: block;
+    width: 156.14px;
+    height: 120px;
+    /* width: 95%; */
+  }
+
+  .stepDetails {
+    grid-template-columns: 80% 20%;
+  }
+
+  .lowerSection {
+    border-radius: 10px;
+  }
+
+  .section1 > div:nth-of-type(1) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .section1 > div:nth-of-type(1) > p {
+    flex: 1;
+  }
+
+  .section1 {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+
+  .desktopLogo,
+  .shopName {
+    display: block;
+  }
+
+  .nameDiv {
+    width: 142px;
+    padding: 10px 2px 10px 7px;
+  }
+
+  .nameDiv > span:nth-of-type(1) {
+    display: block;
+  }
+
+  .searchDiv {
+    width: 33.33%;
+  }
+
+  .searchInput {
+    width: 95%;
+  }
+
+  main {
+    max-width: 800px;
+  }
+}
