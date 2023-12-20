@@ -451,6 +451,7 @@ const dashedCirclesFxn = () => {
 
 dashedCirclesFxn();
 
+// Add event listener for the enter key
 window.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && e.target.localName !== "svg") {
     e.target.click();
