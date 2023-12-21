@@ -1,4 +1,4 @@
-<!-- write a markdown for a link to the hackathon https://www.crushingit.tech/hackathon/challenge -->
+<!-- The link to the hackathon https://www.crushingit.tech/hackathon/challenge -->
 <!-- write a markdown for a link to the hackathon https://www.crushingit.tech/hackathon/challenge -->
 
 [![Crushing It](https://www.crushingit.tech/assets/img/logo.png)](https://www.crushingit.tech/hackathon/challenge)
